@@ -1,18 +1,21 @@
+
+
 import java.util.Scanner;
 
 public class Exe01 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner ent = new Scanner(System.in);
 
-        for (int num = 1; num <= 20; num = num + 2) {
-            if (num % 2 == 0) {
-                System.out.println("É par");
+        int[] vetor = new int[10];
 
-            } else {
-                System.out.println("É impar");
-            }
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("Digite um número");
+            vetor[i] = ent.nextInt();
         }
 
-        sc.close();
+        for (int i = vetor.length - 1; i >= 0; i--) {
+            System.out.println(vetor[i]);
+        }
+
     }
 }
